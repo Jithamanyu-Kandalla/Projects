@@ -1,0 +1,100 @@
+
+https://docs.google.com/document/u/0/d/1GTHlxbhx_l-r8DZRinZrztcjMGiscYkUL4CYqxzPKHI/mobilebasic
+
+/
+Pick any technique of your choice: Logistic Regression, DT, Ensembles.
+Write a function to compute L1Norm of a d-dim vector W.
+Write a function to compute dL1Norm(W)/dW , W is a d-dim vector
+In random Forest how do we sample the data?
+Follow up questions
+Why do we sample the data with replacement? Why don’t we use sampling without replacement
+ 
+4. Difference between GBDT and XGBOOST
+Follow up questions
+Why do you think Xgboost used randomization in addition to standard GBDT models.
+How do we avoid overfitting in standard GBDT- shrinkage values, no of base models as hyperparam
+GBDT we anyways avoid overfitting: using underfit base models, shrinkage values, no of base models as hyperparam. Why do we need additional randomization in Xgboost?
+ 
+5. Two concentric hyperspheres in 10-dim space. 1000 data-points/observations from both these spheres [1000X10 data matrix]. Noisy data. We don’t know which datapoint belongs to which sphere. Find the equations of these two hyperspheres.
+6. Programming-
+A: ID, Name---- n rows
+B: ID, Age----- k rows
+C: ID, Name, Age [ Inner JOIN in SQL or Pandas.Merge]
+Compute C given A and B from scratch(basically we have to implement inner join without using sql or pandas.merge in optimized way)
+Follow up question,
+what is the time complexity of your solution?
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1.
+Given - We know logistics regression, svm become biased toward more class data when there is imbalance situation.
+Question - But when we do multiclass classification then we use method like one vs rest.
+Which mean if we have to do classification of apple, banana, orange then we will do like this
+Apple vs [banana , orange]
+Banana vs [apple, orange] etc.
+So indirectly we are making our dataset to imbalance because  now data become [100 vs 200] if we have 100 data for each class
+2. Why model having low R2 score can be still good model.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+How will you regularise your naive bayes model?
+--------------------------------------------------------------------------------------------------------------------------------------
+In spoken digit recognition assignment, why didn’t we use ConvNet for spectrogram?
+------------------------------------------------------------------------------------------------------------
+What is the best performance metric for 5-class classification problem?
+--------------------------------------------------------------------------------------------
+Which feature encoding should you use for tree based models?
+------------------------------------------------------------------------------------------------------------------------------
+Spiral traversal of matrix
+Find hyperplane which pass through all the datapoints given matrix (n,d)
+R_sqaured/Coefficient of determinism
+Confusion matrix
+When to use auc score and f1 score
+For 3 class classification, KNN gave 10 pts as c1, 10pts as c2, 5 pts as c3 (k = 25), how to decide the tie
+K means and kmeans++, followed up by proportional sampling (edited) 
+-----------------------------------------------------------------------------------------------------------------------------------
+How will you regularise the KNN model ?
+-----------------------------------------------------------------------------------------------------------------------------------
+I have a dataset which contains the image, extracted OCR text and ground truth. I need to build a pipeline which extracts the entities like Invoice date, Invoice number, Customer name, total amount using any NLP techniques.
+/
+Why not use forward feature selection while computing feature importance?
+Which one is the best ?
+Is it becoz of more computations ?
+/
+Is the Calibration classifier required to get probability values for logistic regression.?
+/
+Does data imbalance impact kNN? If so, how to fix it?
+/
+How do we quantify uncertainty in probability class labels when using KNN model for classifications ?
+Is it using weighted KNN ?
+/
+Dataset contains age & Noise (noisy) data as features, both age & noise data features are real valued numbers, then how could we detect whether that feature is age / noise (noisy) data.
+/
+Why is there a loss-function??
+Suppose a person is unknown to ML, then explain in a layman language what is log-loss & why it's used??
+/
+How do we calculate AUC for a multiclass classification?
+/
+Is it possible to calculate correlation between categorical and continuous variable?
+/
+How to overfit DT
+How do u overfit dataset having 10k numerical features with depth 4
+/
+Right from statistics till lstm all were covered
+
+Some of them are CLT , confidence interval performance metrics precision recall F1 score how will you approach imbalanced dataset for q classification problem what is loss surface SGD what is dot product ? When you can perform dot product
+
+What is difference between lstm and conv
+
+Whats the main draw back of applying dense layer to images
+/
+Difference between KMeans and KMeans++
+What is hinge loss
+KNN, k = 25, 10 - c1, 10 - c2, 5 - c3. What would you do in this case
+Data(10k, 500) , hyperplane which passes through all the points.
+How to proceed with: Data((100,5), Y = (0,100)) → regression.
+10:00
+6. I.p (28,28,4) k = (2,3) s = (1,2) p = 0 Output size
+10:00
+7. Regular expression for extracting mails
+10:00
+8. Intitution of Dropouts : overfitting of models.
+10:01
+9. Programming:Input arr[] = {1, 4, 20, 3, 10, 5}, sum = 33 o/p = 2 4 time: O(N)
+/
